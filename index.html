@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        
+
+
+        <title>Portfolio website </title>
+        
+    <style>
+
+        .nav__logo {
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive
+    }
+
+        .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    
+    }
+    .project-card{
+        box-shadow: 0 4px 10px rgb(148, 148, 155);
+
+    }
+    .project-card:hover{
+    transform: translateY(-8px);
+
+        
+    }
+        
+        .project-card img {
+        height: 200px;
+        object-fit: cover;
+        gap:50
+        }
+
+
+        .projects-container .project-card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 600px; /* Or whatever width you want */
+    }
+
+    .projects-container .col-md-3 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .projects-container .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .projects-container img {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+
+    </style>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+
+                    <a href="#" class="nav__logo"><span class="jewel">J</span>ewel</a>
+
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#Education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home" >
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Jewel</span><br> Web Developer </span></h1>
+                    <!-- <p>I am a BCA graduate, proficient in coding and building responsive websites and applications.</p> -->
+
+                    <a href="assets/img/jewel Resume.pdf" class="button"  target="_blank">View Cv</a>
+                </div>
+
+                <div class="home__social">
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="80" y="30" href="assets/img/img2.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about" style="height: 100vh;">
+                <h1 class="section-title" style="font-size: 3rem;">About Me</h1>
+
+                <div class="about__container bd-grid" >
+                    <div class="about__img">
+                        <img src="assets/img/about.jpg" alt="">
+                        <!-- <h2 class="about__subtitle" style="font-size: 2.5rem; ">I'am Jewel Joseph</h2> -->
+                         <!-- style="text-align:justify;  font-weight:bold" -->
+
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Web Developer!</h2>
+                        <p class="about__text" style="text-align:justify;" >As a highly motivated and results-driven BCA graduate, I am eager to apply my knowledge of software development, programming 
+           languages, and data management to contribute to a dynamic team. I possess strong problem-solving skills, attention to detail, and a 
+           passion for continuous learning. I am seeking an opportunity to work in a challenging environment where I can enhance my technical 
+           abilities, develop my professional skills, and make a meaningful contribution to the success of the organization.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== Education =====-->
+            <section class="Education section" id="Education" style="height: 100vh;">
+            <h1 class="section-title" style="font-size: 3rem;">Education</h1>
+
+            <div class="education-container">
+
+                
+                <!-- 🐍 Python Full Stack Certificate -->
+                <div class="education-card">
+                <div class="edu-icon" style="margin-left: 70px;">
+                    <img src="assets/img/certificate.png" alt="Certificate Icon" width="85">
+                </div>
+                <div class="edu-details"><br>
+                    <h3 > Full Stack Development</h3>
+                    <h5>Python-Django,React</h5>
+                    <p>TechWingsys Institute</p>
+                    <span class="year">2025</span>
+                </div>
+                </div>
+
+
+                <!-- 🎓 BCA -->
+                <div class="education-card">
+                <div class="edu-icon">
+                    <i class='bx bxs-graduation' style="color: #1A73E8;"></i>
+                </div>
+                <div class="edu-details">
+                    <h3>Bachelor of Computer Applications</h3>
+                    <p>St. Antony's College, Peruvanthanam</p>
+                    <span class="year">2022–2025</span>
+                </div>
+                </div>
+
+                <!-- 📘 HSE -->
+                <div class="education-card">
+                <div class="edu-icon">
+                    <i class='bx bxs-book' style="color: #0057B8;"></i>
+                </div>
+                <div class="edu-details">
+                    <h3>Higher Secondary Education</h3>
+                    <p>J J Murphy Memorial HSS, Yendayar</p>
+                    <span class="year">2020–2022</span>
+                </div>
+                </div>
+
+                <!-- 🏫 SSLC -->
+                <div class="education-card">
+                <div class="edu-icon">
+                    <i class='bx bxs-school' style="color: #1E40AF;"></i>
+                </div>
+                <div class="edu-details">
+                    <h3>Secondary Education</h3>
+                    <p>St. Antony’s High School, Mundakkayam</p>
+                    <span class="year">2019–2020</span>
+                </div>
+                </div>
+
+            </div>
+            </section>
+
+
+
+
+            <!--===== Projects =====-->
+            <section class="Project section" id="projects">
+            <h1 class="section-title" style="font-size: 3rem;">Projects</h1>
+
+            <div class="projects-container">
+
+                <!-- Home Security System -->
+                <div class="col-md-3">
+                <div class="card project-card" style="border: 1px solid rgb(121, 121, 122);">
+                    <img src="assets/img/hs1.jpg" class="card-img-top" alt="hs">
+                    <div class="card-body">
+                    <h2>Home Security System</h2>
+                    <p>A face recognition system developed in Python to enhance home safety. Uses MySQL for secure data storage and ensures only authorized users can access the home.</p>
+                    <p class="tech">Tech Used: Python, MySQL</p>
+                    </div>
+                </div>
+                </div>
+
+                
+
+                <!-- Portfolio Website -->
+                <div class="col-md-3">
+                <div class="card project-card" style="border: 1px solid rgb(121, 121, 122);">
+                    <img src="assets/img/p1.jpg" class="card-img-top" alt="portfolio">
+                    <div class="card-body">
+                    <h2>Portfolio Website</h2>
+                    <p>A personal responsive portfolio website built with HTML, CSS, and Bootstrap showcasing my skills, education, and projects.</p>
+                    <p class="tech">Tech Used: HTML, CSS, Javascript</p>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Instagram Clone -->
+                <div class="col-md-3">
+                <div class="card project-card" style="border: 1px solid rgb(121, 121, 122);">
+                    <img src="assets/img/insta.jpg" class="card-img-top" alt="insta">
+                    <div class="card-body">
+                    <h2>Instagram Clone</h2>
+                    <p>Built a responsive social media web app that replicates Instagram’s interface. Implemented features like creating/viewing posts, image stories, and a bottom navigation bar.</p>
+                    <p class="tech">Tech Used: React js, HTML, CSS</p>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            </section>
+
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h1 class="section-title" style="font-size: 3rem;">Contact</h1>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form" id="contactForm">
+                        <input type="text" placeholder="Name" class="contact__input" id="name" required>
+                        <input type="mail" placeholder="Email" class="contact__input" id="email">
+                        <textarea name="" id="message" cols="0" rows="6" placeholder="Your Message" class="contact__input" required></textarea>
+                        <button type="submit" class="contact__button button">Submit</button>
+                        
+                    </form>
+                </div>        
+            </section>
+        </main>
+
+        
+        <!--===== FOOTER =====-->
+                <footer class="footer">
+                    <p class="footer__title"></p>
+                    <div class="footer__social">
+                        <a href="mailto:jeweljoseph947@gmail.com" class="footer__icon">
+                            <i class='bx bx-envelope'></i>
+                        </a>
+                        <a href="tel:+919074855240" class="footer__icon">
+                            <i class='bx bx-phone'></i>
+                        </a>
+                        <a href="https://www.google.com/maps/place/idukki+mundakkayam" target="_blank" class="footer__icon">
+                            <i class='bx bx-map'></i>
+                        </a>
+                    </div>
+                    <p class="footer__copy">© 2025 Jewel Joseph</p>
+                </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script> -->
+        <!-- <script src="assets/js/main1.js"></script> -->
+    </body>
+</html>
